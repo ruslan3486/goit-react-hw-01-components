@@ -1,0 +1,31 @@
+.transaction_history {
+  border-collapse: collapse;
+  border: 1px solid grey;
+  margin: auto;
+  margin-top: 40px;
+  width: 600px;
+  background-color: darkgoldenrod;
+}
+th {
+  border: 1px solid grey;
+  padding: 10px 15px;
+  width: 20%;
+  background-color: darkslategray;
+}
+
+td {
+  border: 1px solid grey;
+  padding: 10px 15px;
+}
+
+table {
+  border-top: 3px solid grey;
+}
+
+td:first-child {
+  width: 30%;
+}
+
+tr:nth-child(2n + 1) {
+  background-color: rgb(121, 231, 231);
+}
