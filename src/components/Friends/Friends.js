@@ -1,10 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styles from "./friends.module.css";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styles from './friends.module.css';
 
 const FriendList = ({ friends }) => (
   <ul className={styles.friend_list}>
-    {friends.map((friend) => (
+    {friends.map(friend => (
       <li className={styles.item} key={friend.id}>
         <span
           className={
@@ -24,7 +24,7 @@ FriendList.propType = {
       id: PropTypes.number.isRequired,
       avatar: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
-    })
+    }),
   ),
 };
 

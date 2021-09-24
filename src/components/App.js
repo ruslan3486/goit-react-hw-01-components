@@ -1,12 +1,12 @@
-import React from "react";
-import Profile from "./Profile/Profile.js";
-import user from "./Profile/user.json";
-import Statistics from "./Statistics/Static.js";
-import statisticalData from "./Statistics/statistical-data.json";
-import FriendList from "./Friends/Friends.js";
-import friends from "./Friends/friends.json";
-import TransactionHistory from "./Transactions/Transaction.js";
-import transactions from "./Transactions/transactions.json";
+import React from 'react';
+import Profile from './Profile/Profile.js';
+import user from './Profile/user.json';
+import Statistics from './Statistics/Static.js';
+import statisticalData from './Statistics/statistical-data.json';
+import FriendList from './Friends/Friends.js';
+import friends from './Friends/friends.json';
+import TransactionHistory from './Transactions/Transaction.js';
+import transactions from './Transactions/transactions.json';
 
 const App = () => (
   <>
@@ -17,6 +17,7 @@ const App = () => (
       avatar={user.avatar}
       stats={user.stats}
     />
+    <Statistics title="Upload stats" stats={statisticalData} />;
     <Statistics stats={statisticalData} />;
     <FriendList friends={friends} />;
     <TransactionHistory items={transactions} />;
